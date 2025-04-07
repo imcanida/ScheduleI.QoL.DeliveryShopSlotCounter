@@ -7,19 +7,13 @@ using UnityEngine;
 using HarmonyLib;
 using ScheduleI.QoL.DeliveryShopSlotCounter;
 
-[assembly: MelonInfo(typeof(DeliveryShopSlotCounterMod), "Schedule I - QoL Delivery Shop Slot Counter", "1.0.0", "Dreous")]
+[assembly: MelonInfo(typeof(DeliveryShopSlotCounterMod), "Schedule I - QoL Delivery Shop Slot Counter", "0.1.0", "Dreous")]
 [assembly: MelonGame("TVGS", "Schedule I")]
 
 namespace ScheduleI.QoL.DeliveryShopSlotCounter
 {
     public class DeliveryShopSlotCounterMod : MelonMod
     {
-        //public override void OnInitializeMelon()
-        //{
-        //    var harmony = new HarmonyLib.Harmony("com.dreous.ScheduleIDeliveryShopSlotCounter");
-        //    harmony.PatchAll();
-        //}
-
         [HarmonyPatch(typeof(DeliveryShop))]
         public static class DeliveryShopPatches
         {
@@ -151,6 +145,5 @@ namespace ScheduleI.QoL.DeliveryShopSlotCounter
                 return null;
             }
         }
-
     }
 }
