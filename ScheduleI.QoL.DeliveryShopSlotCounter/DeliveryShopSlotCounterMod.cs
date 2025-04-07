@@ -7,7 +7,7 @@ using UnityEngine;
 using HarmonyLib;
 using ScheduleI.QoL.DeliveryShopSlotCounter;
 
-[assembly: MelonInfo(typeof(DeliveryShopSlotCounterMod), "Schedule I - QoL Delivery Shop Slot Counter", "0.1.0", "Dreous")]
+[assembly: MelonInfo(typeof(DeliveryShopSlotCounterMod), "Schedule I - QoL Delivery Shop Slot Counter", "0.1.0", "Dreous", "https://github.com/imcanida/ScheduleI.QoL.DeliveryShopSlotCounter")]
 [assembly: MelonGame("TVGS", "Schedule I")]
 
 namespace ScheduleI.QoL.DeliveryShopSlotCounter
